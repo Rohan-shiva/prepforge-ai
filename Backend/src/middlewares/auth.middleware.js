@@ -2,26 +2,32 @@ const jwt=require('jsonwebtoken');
 const tokenBlacklistModel=require('../models/blacklist.model');
 
 
-async function authUser(req,res,next){
-  const token=req.cookies.token;
+async function authUser(req, res, next) {
+  let token = req.cookies?.token;
 
-  if(!token){
-    return res.status(401).json({message:"Token not provided"});
+  if (!token && req.headers.authorization) {
+    const parts = req.headers.authorization.split(" ");
+    if (parts.length === 2 && parts[0] === "Bearer") {
+      token = parts[1];
+    }
   }
 
-  const istokenBlacklisted=await tokenBlacklistModel.findOne({token});
-  
-  if(istokenBlacklisted){
-    return res.status(401).json({message:"Token is invalid"});
+  if (!token) {
+    return res.status(401).json({ message: "Token not provided" });
   }
 
-  
-  try{
-    const decoded=jwt.verify(token,process.env.JWT_SECRET);
-    req.user=decoded;
+  try {
+    const istokenBlacklisted = await tokenBlacklistModel.findOne({ token });
+    if (istokenBlacklisted) {
+      return res.status(401).json({ message: "Token is invalid" });
+    }
+
+    const jwtSecret = process.env.JWT_SECRET || "default_jwt_secret_key";
+    const decoded = jwt.verify(token, jwtSecret);
+    req.user = decoded;
     next();
-  }catch(err){
-    return res.status(401).json({message:"Invalid token"});
+  } catch (err) {
+    return res.status(401).json({ message: "Invalid token" });
   }
 }
 
