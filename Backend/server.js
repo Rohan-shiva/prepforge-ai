@@ -8,6 +8,19 @@ const invokeGeminiAI = require('./src/services/ai.service');
 connectDB();
 // generateInterviewReport({resume,selfDescription,jobDescription});
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+// app.listen(3000, () => {
+//   console.log('Server is running on port 3000');
+// });
+
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    service: "PrepForge AI Backend"
+  });
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
