@@ -1,0 +1,40 @@
+4 Layers Architecture in React we follow:
+
+- UI Layer
+=> component
+=> pages
+UI kaise dikhega naivgation vgera ye sb hm UI Layer m dkhte h
+
+- Hook Layer
+=>Hooks
+For managing state and Api layer
+
+- State Layer
+->auth.context.js
+->ai.context.js
+Frontend m user ka jo data hoga use store krne ke liye
+
+- API Layer
+=>services
+      ->auth.api.js
+Isme likhege hmara frontend backend see kaise interact krega
+
+
+
+--Ab hme chahiye jo bnda login ho srf voi homepage ko access kr ske mtlb hmari state m user ka data ho tbhi access hoga
+Iske lie hm components me Protected.jsx rkhege
+
+
+
+--Abhi tk frontend m Authetication ki jitni bhi chize thi kr li
+Jaise ki components/Protected.jsx
+hooks/useAuth.js
+pages/Login.jsx
+pages/Register.jsx
+auth.context.jsx
+services/auth.api.js
+
+
+-- Ab chlte h backend m ai features ke liye api bnane
+-- Ab user apna self_description, job_description and resume pdf m daalega , ye teeno data lee server p jaege server udhr se reply dega ye hm puvhege ai se full report generate krvaege or is generated report ko save bhi kraege DB m taki user baad m bhi dkh ske toh
+isliye sbse pehle DB m store krane ke liye hm bnaege schema.

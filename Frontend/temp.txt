@@ -1,0 +1,51 @@
+jd=`
+We are looking for a motivated Full Stack Software Developer with strong problem-solving skills and a solid foundation in software engineering.
+
+Required Skills:
+- Strong knowledge of C++, Java, Python, or JavaScript
+- Good understanding of Data Structures and Algorithms
+- Experience with React.js and modern frontend development
+- Knowledge of Node.js and Express.js for backend development
+- Experience designing and consuming REST APIs
+- Knowledge of MongoDB, Mongoose, SQL, and database fundamentals
+- Understanding of Object-Oriented Programming
+- Experience with Git and GitHub
+- Knowledge of debugging, API testing, and software testing fundamentals
+- Strong understanding of time and space complexity
+- Ability to solve real-world technical problems
+- Good communication and teamwork skills
+
+Preferred Skills:
+- Experience with AI/ML or AI-powered applications
+- Knowledge of Android development
+- Experience with cloud technologies and scalable systems
+- Familiarity with system design and distributed systems
+
+Responsibilities:
+- Develop and maintain full-stack web applications
+- Build reusable frontend components using React.js
+- Develop backend services and REST APIs using Node.js and Express.js
+- Work with databases such as MongoDB and SQL
+- Debug and troubleshoot frontend, backend, API, and database issues
+- Write clean, maintainable, and scalable code
+- Collaborate using Git and GitHub
+- Participate in code reviews and software testing
+- Solve algorithmic and engineering problems
+
+`
+
+sd=`
+I am a motivated software engineering student with a strong interest in Full-Stack Development, Software Engineering, AI/ML, and Problem Solving.
+
+I have a solid foundation in C++, Java, Python, JavaScript, Data Structures and Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, and Software Engineering.
+
+My full-stack development skills include React.js, JavaScript, HTML, CSS, Bootstrap, Node.js, Express.js, REST APIs, MongoDB, Mongoose, and SQL. I have experience building frontend interfaces, backend services, reusable React components, RESTful APIs, and database-driven applications.
+
+I have developed practical projects including a full-stack web application using React.js, Node.js, Express.js, MongoDB, and REST APIs. I have also worked on an Expense Tracker, an AQI India Tracker Android application, and a Smart Waste Segregation System.
+
+I regularly practice Data Structures and Algorithms problems involving arrays, strings, binary search, stacks, queues, linked lists, trees, heaps, hashing, sliding window, graphs, and dynamic programming. I have a strong understanding of time and space complexity and enjoy solving LeetCode-style problems using C++.
+
+I am familiar with debugging frontend, backend, API, database, and hardware-related issues. I have experience with API testing, unit testing fundamentals, Git, GitHub, Postman, and collaborative software development.
+
+I am a fast learner with a strong problem-solving mindset and a genuine interest in building scalable, reliable, and impactful software solutions. I am currently focused on improving my skills in full-stack development, AI/ML, backend development, cloud technologies, system design, and distributed systems.
+`
