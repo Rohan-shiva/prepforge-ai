@@ -313,3 +313,4 @@ Distributed under the **ISC License**. See `LICENSE` for more information.
 ---
 
 **PrepForge AI** — Prepare Smarter. Interview Better.
+*Production Deployment: Active & Verified (Vercel & Render)*
