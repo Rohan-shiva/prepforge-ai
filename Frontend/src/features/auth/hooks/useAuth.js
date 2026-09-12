@@ -15,12 +15,16 @@ export const useAuth = () => {
     try {
       const data = await login({ email, password });
       if (data && data.user) {
+        if (data.token) {
+          localStorage.setItem("token", data.token);
+        }
         setUser(data.user);
         return true;
       }
       return false;
     } catch (err) {
       console.error("Login error:", err);
+      localStorage.removeItem("token");
       setUser(null);
       return false;
     } finally {
@@ -33,12 +37,16 @@ export const useAuth = () => {
     try {
       const data = await register({ username, email, password });
       if (data && data.user) {
+        if (data.token) {
+          localStorage.setItem("token", data.token);
+        }
         setUser(data.user);
         return true;
       }
       return false;
     } catch (err) {
       console.error("Register error:", err);
+      localStorage.removeItem("token");
       setUser(null);
       return false;
     } finally {
