@@ -37,21 +37,21 @@ const Register = () => {
         <form onSubmit={handleSubmit} >
           <div className="input-group">
             <label htmlFor='username'>Username</label>
-            <input type='text' id='username' name='username' placeholder='Enter username'
+            <input type='text' id='username' name='username' placeholder='Enter username' autoComplete='username'
             onChange={(e)=>{setUsername(e.target.value)}}
             />
 
           </div>
           <div className="input-group">
             <label htmlFor='email'>Email</label>
-            <input type='email' id='email' name='email' placeholder='Enter email address'
+            <input type='email' id='email' name='email' placeholder='Enter email address' autoComplete='email'
             onChange={(e)=>{setEmail(e.target.value)}}
             />
           </div>
 
           <div className="input-group">
             <label htmlFor='password'>Password</label>
-            <input type='password' id='password' name='password' placeholder='Enter Password'
+            <input type='password' id='password' name='password' placeholder='Enter Password' autoComplete='new-password'
             onChange={(e)=>{setPassword(e.target.value)}}
             />
           </div>

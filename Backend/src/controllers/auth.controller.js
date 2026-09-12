@@ -28,7 +28,21 @@ async function registerUserController(req, res) {
       return res.status(400).json({ message: 'Please provide username, email and password' });
     }
 
-    const isUserAlreadyExists = await userModel.findOne({ $or: [{ username }, { email }] });
+    const cleanUsername = String(username).trim();
+    const cleanEmail = String(email).trim();
+
+    const usernameRegex = new RegExp(`^${cleanUsername.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`, 'i');
+    const emailRegex = new RegExp(`^${cleanEmail.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`, 'i');
+
+    const isUserAlreadyExists = await userModel.findOne({
+      $or: [
+        { username: cleanUsername },
+        { email: cleanEmail },
+        { username: usernameRegex },
+        { email: emailRegex }
+      ]
+    });
+
     if (isUserAlreadyExists) {
       return res.status(400).json({ message: 'Username or email already exists' });
     }
@@ -36,8 +50,8 @@ async function registerUserController(req, res) {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const user = await userModel.create({
-      username,
-      email,
+      username: cleanUsername,
+      email: cleanEmail.toLowerCase(),
       password: hashedPassword
     });
 
@@ -74,7 +88,18 @@ async function loginUserController(req, res) {
       return res.status(400).json({ message: 'Please provide email and password' });
     }
 
-    const user = await userModel.findOne({ email });
+    const cleanIdentifier = String(email).trim();
+    const identifierRegex = new RegExp(`^${cleanIdentifier.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`, 'i');
+
+    const user = await userModel.findOne({
+      $or: [
+        { email: cleanIdentifier },
+        { username: cleanIdentifier },
+        { email: identifierRegex },
+        { username: identifierRegex }
+      ]
+    });
+
     if (!user) {
       return res.status(400).json({ message: 'Invalid email or password' });
     }
