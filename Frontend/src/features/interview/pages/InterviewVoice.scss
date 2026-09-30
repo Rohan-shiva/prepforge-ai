@@ -1,7 +1,7 @@
 .voice-page-wrapper {
   min-height: calc(100vh - 60px);
-  background: #0d0f14;
-  color: #e8e8ed;
+  background: #0b0f19;
+  color: #f8fafc;
   padding: 2rem 1.5rem;
   display: flex;
   justify-content: center;
@@ -9,12 +9,12 @@
   .voice-setup-card {
     max-width: 650px;
     width: 100%;
-    background: #111318;
-    border: 1px solid #272a31;
-    border-radius: 16px;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
     padding: 2.5rem;
     align-self: center;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 
     .voice-header {
       text-align: center;
@@ -23,14 +23,14 @@
       .mic-badge {
         width: 56px;
         height: 56px;
-        border-radius: 50%;
-        background: rgba(99, 102, 241, 0.15);
-        color: #818cf8;
+        border-radius: 8px;
+        background: #1e293b;
+        color: #38bdf8;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto 1.25rem;
-        border: 1px solid rgba(99, 102, 241, 0.3);
+        border: 1px solid #334155;
 
         svg {
           width: 28px;
@@ -41,12 +41,12 @@
       h1 {
         font-size: 1.8rem;
         font-weight: 700;
-        color: #ffffff;
+        color: #f8fafc;
         margin-bottom: 0.75rem;
       }
 
       p {
-        color: #9ca3af;
+        color: #94a3b8;
         font-size: 0.95rem;
         line-height: 1.6;
       }
@@ -61,30 +61,31 @@
       label {
         font-size: 0.9rem;
         font-weight: 600;
-        color: #d1d5db;
+        color: #cbd5e1;
       }
 
       input {
-        background: #1a1d24;
-        border: 1px solid #374151;
-        border-radius: 8px;
+        background: #0b0f19;
+        border: 1px solid #1e293b;
+        border-radius: 6px;
         padding: 0.85rem 1rem;
-        color: #f3f4f6;
+        color: #f8fafc;
         font-size: 0.95rem;
         outline: none;
 
         &:focus {
-          border-color: #6366f1;
+          border-color: #2563eb;
+          box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
         }
       }
     }
 
     .voice-warning-box {
       background: rgba(245, 158, 11, 0.1);
-      border: 1px solid rgba(245, 158, 11, 0.3);
-      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      color: #facc15;
       padding: 0.85rem 1rem;
-      border-radius: 8px;
+      border-radius: 6px;
       font-size: 0.85rem;
       line-height: 1.5;
       margin-bottom: 1.5rem;
@@ -93,18 +94,18 @@
     .start-btn {
       width: 100%;
       padding: 1rem;
-      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      background: #2563eb;
       color: #ffffff;
       font-weight: 600;
       font-size: 1rem;
-      border: none;
-      border-radius: 10px;
+      border: 1px solid #2563eb;
+      border-radius: 6px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 0.6rem;
-      transition: all 0.2s ease;
+      transition: background 0.15s ease, border-color 0.15s ease;
 
       svg {
         width: 20px;
@@ -112,7 +113,8 @@
       }
 
       &:hover {
-        background: linear-gradient(135deg, #4f46e5, #7c3aed);
+        background: #1d4ed8;
+        border-color: #1d4ed8;
       }
     }
   }
@@ -128,9 +130,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: #111318;
-      border: 1px solid #272a31;
-      border-radius: 12px;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
       padding: 1rem 1.5rem;
 
       .session-info {
@@ -139,9 +141,9 @@
         gap: 1rem;
 
         .role-tag {
-          background: rgba(99, 102, 241, 0.15);
-          color: #818cf8;
-          border: 1px solid rgba(99, 102, 241, 0.3);
+          background: #1e293b;
+          color: #38bdf8;
+          border: 1px solid #334155;
           padding: 0.3rem 0.75rem;
           border-radius: 6px;
           font-weight: 600;
@@ -149,7 +151,7 @@
         }
 
         .question-counter {
-          color: #9ca3af;
+          color: #94a3b8;
           font-size: 0.9rem;
           font-weight: 500;
         }
@@ -179,49 +181,49 @@
           }
 
           &.muted {
-            background: rgba(107, 114, 128, 0.1);
-            color: #9ca3af;
-            border-color: rgba(107, 114, 128, 0.3);
+            background: #1e293b;
+            color: #94a3b8;
+            border-color: #334155;
           }
         }
 
         .finish-btn {
           background: transparent;
-          color: #9ca3af;
-          border: 1px solid #374151;
+          color: #94a3b8;
+          border: 1px solid #1e293b;
           padding: 0.4rem 0.85rem;
           border-radius: 6px;
           font-size: 0.85rem;
           cursor: pointer;
 
           &:hover {
-            color: #f3f4f6;
-            background: rgba(255, 255, 255, 0.05);
+            color: #f8fafc;
+            background: #1e293b;
           }
         }
       }
     }
 
     .voice-interview-card {
-      background: #111318;
-      border: 1px solid #272a31;
-      border-radius: 16px;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
 
       .question-display-box {
-        background: #181b22;
-        border: 1px solid #2d313b;
-        border-radius: 12px;
+        background: #0b0f19;
+        border: 1px solid #1e293b;
+        border-radius: 8px;
         padding: 1.5rem;
 
         .category-tag {
           font-size: 0.75rem;
           font-weight: 700;
           letter-spacing: 0.05em;
-          color: #818cf8;
+          color: #38bdf8;
           text-transform: uppercase;
           margin-bottom: 0.5rem;
         }
@@ -229,23 +231,24 @@
         .question-text {
           font-size: 1.3rem;
           font-weight: 600;
-          color: #ffffff;
+          color: #f8fafc;
           line-height: 1.5;
           margin-bottom: 1rem;
         }
 
         .replay-voice-btn {
-          background: rgba(255, 255, 255, 0.05);
-          color: #9ca3af;
-          border: 1px solid #374151;
+          background: #1e293b;
+          color: #94a3b8;
+          border: 1px solid #334155;
           padding: 0.35rem 0.75rem;
           border-radius: 6px;
           font-size: 0.8rem;
           cursor: pointer;
 
           &:hover {
-            color: #ffffff;
-            background: rgba(255, 255, 255, 0.1);
+            color: #f8fafc;
+            background: #2563eb;
+            border-color: #2563eb;
           }
         }
       }
@@ -261,38 +264,37 @@
           align-items: center;
           gap: 0.75rem;
           padding: 1.5rem;
-          background: #16181f;
-          border-radius: 12px;
-          border: 1px dashed #2e333d;
+          background: #0b0f19;
+          border-radius: 8px;
+          border: 1px dashed #1e293b;
 
           .mic-button {
-            width: 70px;
-            height: 70px;
+            width: 64px;
+            height: 64px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            background: #2563eb;
             color: #ffffff;
             border: none;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+            transition: background 0.2s ease;
 
             svg {
-              width: 32px;
-              height: 32px;
+              width: 28px;
+              height: 28px;
             }
 
             &.listening {
-              background: linear-gradient(135deg, #ef4444, #dc2626);
+              background: #dc2626;
               animation: pulse-ring 1.5s infinite;
             }
           }
 
           .recording-status {
             font-size: 0.88rem;
-            color: #9ca3af;
+            color: #94a3b8;
             font-weight: 500;
           }
         }
@@ -302,7 +304,7 @@
           border: 1px solid rgba(239, 68, 68, 0.3);
           color: #f87171;
           padding: 0.75rem 1rem;
-          border-radius: 8px;
+          border-radius: 6px;
           font-size: 0.85rem;
         }
 
@@ -314,22 +316,22 @@
           label {
             font-size: 0.85rem;
             font-weight: 600;
-            color: #9ca3af;
+            color: #94a3b8;
           }
 
           textarea {
-            background: #181b22;
-            border: 1px solid #374151;
-            border-radius: 10px;
+            background: #0b0f19;
+            border: 1px solid #1e293b;
+            border-radius: 6px;
             padding: 1rem;
-            color: #f3f4f6;
+            color: #f8fafc;
             font-size: 0.95rem;
             line-height: 1.6;
             outline: none;
             resize: vertical;
 
             &:focus {
-              border-color: #6366f1;
+              border-color: #2563eb;
             }
           }
         }
@@ -338,14 +340,14 @@
           .submit-answer-btn {
             width: 100%;
             padding: 0.9rem;
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            background: #2563eb;
             color: #ffffff;
             font-weight: 600;
             font-size: 0.95rem;
-            border: none;
-            border-radius: 10px;
+            border: 1px solid #2563eb;
+            border-radius: 6px;
             cursor: pointer;
-            transition: all 0.2s ease;
+            transition: background 0.15s ease;
 
             &:disabled {
               opacity: 0.5;
@@ -353,16 +355,17 @@
             }
 
             &:not(:disabled):hover {
-              background: linear-gradient(135deg, #4f46e5, #7c3aed);
+              background: #1d4ed8;
+              border-color: #1d4ed8;
             }
           }
         }
       }
 
       .evaluation-box {
-        background: #181b22;
-        border: 1px solid #2d313b;
-        border-radius: 12px;
+        background: #0b0f19;
+        border: 1px solid #1e293b;
+        border-radius: 8px;
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -376,7 +379,7 @@
           h3 {
             font-size: 1.2rem;
             font-weight: 700;
-            color: #ffffff;
+            color: #f8fafc;
           }
 
           .score-badge {
@@ -393,7 +396,7 @@
 
             &.mid {
               background: rgba(245, 158, 11, 0.15);
-              color: #fbbf24;
+              color: #facc15;
               border: 1px solid rgba(245, 158, 11, 0.3);
             }
 
@@ -406,7 +409,7 @@
         }
 
         .feedback-text {
-          color: #d1d5db;
+          color: #cbd5e1;
           font-size: 0.95rem;
           line-height: 1.6;
         }
@@ -415,7 +418,7 @@
           strong {
             display: block;
             font-size: 0.88rem;
-            color: #9ca3af;
+            color: #94a3b8;
             margin-bottom: 0.5rem;
           }
 
@@ -428,23 +431,23 @@
 
             li {
               font-size: 0.9rem;
-              color: #e5e7eb;
+              color: #f8fafc;
             }
           }
 
           p {
             font-size: 0.9rem;
-            color: #e5e7eb;
+            color: #f8fafc;
             line-height: 1.5;
-            background: #111318;
+            background: #0f172a;
             padding: 0.85rem;
-            border-radius: 8px;
-            border: 1px solid #272a31;
+            border-radius: 6px;
+            border: 1px solid #1e293b;
           }
         }
 
         .strengths-block ul li { color: #4ade80; }
-        .weaknesses-block ul li { color: #fbbf24; }
+        .weaknesses-block ul li { color: #facc15; }
 
         .next-action-row {
           margin-top: 0.5rem;
@@ -452,16 +455,17 @@
           .next-btn {
             width: 100%;
             padding: 0.85rem;
-            background: linear-gradient(135deg, #10b981, #059669);
+            background: #16a34a;
             color: #ffffff;
             font-weight: 600;
             font-size: 0.95rem;
-            border: none;
-            border-radius: 8px;
+            border: 1px solid #16a34a;
+            border-radius: 6px;
             cursor: pointer;
 
             &:hover {
-              background: linear-gradient(135deg, #059669, #047857);
+              background: #15803d;
+              border-color: #15803d;
             }
           }
         }
@@ -469,9 +473,9 @@
     }
 
     .completed-summary-card {
-      background: #111318;
-      border: 1px solid #272a31;
-      border-radius: 16px;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
       padding: 2.5rem;
       text-align: center;
 
@@ -483,19 +487,19 @@
       h2 {
         font-size: 1.8rem;
         font-weight: 700;
-        color: #ffffff;
+        color: #f8fafc;
         margin-bottom: 0.5rem;
       }
 
       p {
-        color: #9ca3af;
+        color: #94a3b8;
         margin-bottom: 2rem;
       }
 
       .score-banner {
-        background: #181b22;
-        border: 1px solid #2d313b;
-        border-radius: 12px;
+        background: #0b0f19;
+        border: 1px solid #1e293b;
+        border-radius: 8px;
         padding: 1.5rem;
         display: flex;
         align-items: center;
@@ -506,7 +510,7 @@
         .big-score {
           font-size: 2.8rem;
           font-weight: 800;
-          color: #818cf8;
+          color: #38bdf8;
         }
 
         .score-text {
@@ -516,12 +520,12 @@
 
           strong {
             font-size: 1.1rem;
-            color: #ffffff;
+            color: #f8fafc;
           }
 
           span {
             font-size: 0.85rem;
-            color: #9ca3af;
+            color: #94a3b8;
           }
         }
       }
@@ -532,14 +536,14 @@
 
         h3 {
           font-size: 1.1rem;
-          color: #ffffff;
+          color: #f8fafc;
           margin-bottom: 1rem;
         }
 
         .evaluated-item {
-          background: #181b22;
-          border: 1px solid #2d313b;
-          border-radius: 10px;
+          background: #0b0f19;
+          border: 1px solid #1e293b;
+          border-radius: 6px;
           padding: 1rem 1.25rem;
           margin-bottom: 1rem;
 
@@ -550,8 +554,8 @@
             margin-bottom: 0.75rem;
 
             .q-num {
-              background: rgba(99, 102, 241, 0.15);
-              color: #818cf8;
+              background: #1e293b;
+              color: #38bdf8;
               font-weight: 700;
               font-size: 0.8rem;
               padding: 0.2rem 0.5rem;
@@ -560,7 +564,7 @@
 
             .q-text {
               flex: 1;
-              color: #ffffff;
+              color: #f8fafc;
               font-size: 0.95rem;
             }
 
@@ -571,21 +575,21 @@
               border-radius: 4px;
 
               &.high { background: rgba(34, 197, 94, 0.15); color: #4ade80; }
-              &.mid { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+              &.mid { background: rgba(245, 158, 11, 0.15); color: #facc15; }
               &.low { background: rgba(239, 68, 68, 0.15); color: #f87171; }
             }
           }
 
           .user-ans-block, .feedback-block {
             small {
-              color: #9ca3af;
+              color: #94a3b8;
               font-size: 0.78rem;
               display: block;
               margin-bottom: 0.2rem;
             }
 
             p {
-              color: #d1d5db;
+              color: #cbd5e1;
               font-size: 0.88rem;
               margin: 0 0 0.5rem 0;
             }
@@ -600,25 +604,25 @@
 
         .action-btn {
           padding: 0.85rem 1.5rem;
-          border-radius: 8px;
+          border-radius: 6px;
           font-weight: 600;
           font-size: 0.92rem;
           cursor: pointer;
 
           &.primary {
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            background: #2563eb;
             color: #ffffff;
-            border: none;
+            border: 1px solid #2563eb;
 
-            &:hover { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
+            &:hover { background: #1d4ed8; }
           }
 
           &.secondary {
             background: transparent;
-            color: #d1d5db;
-            border: 1px solid #374151;
+            color: #cbd5e1;
+            border: 1px solid #1e293b;
 
-            &:hover { background: rgba(255, 255, 255, 0.05); }
+            &:hover { background: #1e293b; }
           }
         }
       }
@@ -628,12 +632,13 @@
 
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.5);
   }
   70% {
-    box-shadow: 0 0 0 15px rgba(239, 68, 68, 0);
+    box-shadow: 0 0 0 15px rgba(220, 38, 38, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
   }
 }
+
