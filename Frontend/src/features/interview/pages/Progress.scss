@@ -1,7 +1,7 @@
 .progress-page {
   min-height: calc(100vh - 60px);
-  background: #0d0f14;
-  color: #e8e8ed;
+  background: #0b0f19;
+  color: #f8fafc;
   padding: 2rem 1.5rem;
 
   .progress-container {
@@ -14,20 +14,20 @@
       h1 {
         font-size: 1.8rem;
         font-weight: 700;
-        color: #ffffff;
+        color: #f8fafc;
         margin-bottom: 0.5rem;
       }
 
       p {
-        color: #9ca3af;
+        color: #94a3b8;
         font-size: 0.95rem;
       }
     }
 
     .empty-analytics-card {
-      background: #111318;
-      border: 1px solid #272a31;
-      border-radius: 16px;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
       padding: 4rem 2rem;
       text-align: center;
       max-width: 600px;
@@ -40,12 +40,12 @@
 
       h3 {
         font-size: 1.3rem;
-        color: #ffffff;
+        color: #f8fafc;
         margin-bottom: 0.5rem;
       }
 
       p {
-        color: #9ca3af;
+        color: #94a3b8;
         font-size: 0.95rem;
       }
     }
@@ -56,9 +56,9 @@
       gap: 1.5rem;
 
       .analytics-card {
-        background: #111318;
-        border: 1px solid #272a31;
-        border-radius: 16px;
+        background: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 10px;
         padding: 1.75rem;
 
         &.full-width {
@@ -71,17 +71,17 @@
           justify-content: space-between;
           margin-bottom: 1.5rem;
           padding-bottom: 0.75rem;
-          border-bottom: 1px solid #272a31;
+          border-bottom: 1px solid #1e293b;
 
           h2 {
             font-size: 1.2rem;
             font-weight: 700;
-            color: #ffffff;
+            color: #f8fafc;
           }
 
           span {
             font-size: 0.85rem;
-            color: #818cf8;
+            color: #38bdf8;
             font-weight: 500;
           }
         }
@@ -105,17 +105,17 @@
             .bar-wrapper {
               flex: 1;
               width: 44px;
-              background: #181b22;
-              border-radius: 8px;
+              background: #0b0f19;
+              border-radius: 6px;
               display: flex;
               align-items: flex-end;
               overflow: hidden;
-              border: 1px solid #2d313b;
+              border: 1px solid #1e293b;
 
               .bar-fill {
                 width: 100%;
-                background: linear-gradient(180deg, #818cf8, #6366f1);
-                border-radius: 6px 6px 0 0;
+                background: #2563eb;
+                border-radius: 4px 4px 0 0;
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
@@ -133,13 +133,13 @@
             .bar-label {
               font-size: 0.85rem;
               font-weight: 600;
-              color: #f3f4f6;
+              color: #f8fafc;
               margin-top: 0.5rem;
             }
 
             .bar-role {
               font-size: 0.75rem;
-              color: #9ca3af;
+              color: #94a3b8;
               text-align: center;
               white-space: nowrap;
               overflow: hidden;
@@ -162,28 +162,28 @@
               margin-bottom: 0.4rem;
 
               .topic-name {
-                color: #ffffff;
+                color: #f8fafc;
                 font-size: 0.95rem;
               }
 
               .topic-progression-str {
-                color: #818cf8;
+                color: #38bdf8;
                 font-weight: 700;
                 font-size: 0.88rem;
               }
             }
 
             .topic-progress-bar-bg {
-              height: 10px;
-              background: #181b22;
-              border-radius: 5px;
+              height: 8px;
+              background: #0b0f19;
+              border-radius: 4px;
               overflow: hidden;
-              border: 1px solid #2d313b;
+              border: 1px solid #1e293b;
 
               .topic-progress-bar-fill {
                 height: 100%;
-                background: linear-gradient(90deg, #6366f1, #10b981);
-                border-radius: 5px;
+                background: #2563eb;
+                border-radius: 4px;
                 transition: width 0.5s ease;
               }
             }
@@ -196,20 +196,20 @@
           gap: 1.5rem;
 
           .comp-col {
-            background: #181b22;
-            border: 1px solid #2d313b;
-            border-radius: 12px;
+            background: #0b0f19;
+            border: 1px solid #1e293b;
+            border-radius: 6px;
             padding: 1.25rem;
 
             h3 {
               font-size: 1rem;
               font-weight: 700;
-              color: #ffffff;
+              color: #f8fafc;
               margin-bottom: 0.2rem;
             }
 
             small {
-              color: #9ca3af;
+              color: #94a3b8;
               font-size: 0.8rem;
               display: block;
               margin-bottom: 1rem;
@@ -230,14 +230,14 @@
                 font-weight: 500;
 
                 &.high { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
-                &.medium { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
-                &.low { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+                &.medium { background: rgba(245, 158, 11, 0.15); color: #facc15; border: 1px solid rgba(245, 158, 11, 0.3); }
+                &.low { background: rgba(59, 130, 246, 0.15); color: #38bdf8; border: 1px solid rgba(59, 130, 246, 0.3); }
               }
 
               .weakness-tag {
                 padding: 0.4rem 0.75rem;
                 background: rgba(245, 158, 11, 0.12);
-                color: #fbbf24;
+                color: #facc15;
                 border: 1px solid rgba(245, 158, 11, 0.3);
                 border-radius: 6px;
                 font-size: 0.85rem;
@@ -247,10 +247,11 @@
         }
 
         .no-data-text {
-          color: #9ca3af;
+          color: #94a3b8;
           font-size: 0.9rem;
         }
       }
     }
   }
 }
+
