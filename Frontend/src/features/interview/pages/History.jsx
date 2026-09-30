@@ -8,6 +8,12 @@ const PlayIcon = () => (
   </svg>
 );
 
+const HistoryIcon = () => (
+  <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+  </svg>
+);
+
 const History = () => {
   const { fetchVoiceSessions, sessions, loading } = useInterview();
   const [selectedSession, setSelectedSession] = useState(null);
@@ -56,7 +62,7 @@ const History = () => {
 
         {(!sessions || sessions.length === 0) ? (
           <div className="empty-history-card">
-            <div className="empty-icon">📜</div>
+            <div className="empty-icon"><HistoryIcon /></div>
             <h3>No Completed Mock Interviews Yet</h3>
             <p>Take your first AI voice mock interview to generate session reports and track your progress over time.</p>
           </div>
@@ -117,7 +123,7 @@ const History = () => {
                       <h4>Observed Interview Weaknesses</h4>
                       <ul>
                         {selectedSession.observedWeaknesses.map((w, idx) => (
-                          <li key={idx}>⚠️ {w}</li>
+                          <li key={idx}>• {w}</li>
                         ))}
                       </ul>
                     </div>
@@ -179,7 +185,7 @@ const History = () => {
                 </div>
               ) : (
                 <div className="select-prompt-card">
-                  <p>👈 Select an interview session from the list to view full question-level reports and transcripts.</p>
+                  <p>Select an interview session from the sidebar to view full question-level reports and transcripts.</p>
                 </div>
               )}
             </section>
@@ -191,3 +197,4 @@ const History = () => {
 };
 
 export default History;
+

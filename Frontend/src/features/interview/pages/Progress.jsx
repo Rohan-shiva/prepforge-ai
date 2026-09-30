@@ -2,6 +2,13 @@ import React, { useEffect } from "react";
 import { useInterview } from "../hooks/useInterview";
 import "./Progress.scss";
 
+const TrendingIcon = () => (
+  <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+    <polyline points="17 6 23 6 23 12"/>
+  </svg>
+);
+
 const Progress = () => {
   const { fetchProgressAnalytics, analytics, loading } = useInterview();
 
@@ -37,7 +44,7 @@ const Progress = () => {
 
         {(!analytics || analytics.totalSessions === 0) ? (
           <div className="empty-analytics-card">
-            <div className="empty-icon">📈</div>
+            <div className="empty-icon"><TrendingIcon /></div>
             <h3>No Progress Data Recorded Yet</h3>
             <p>Complete mock voice interview sessions to unlock real-time score progression graphs and skill-by-skill improvement metrics.</p>
           </div>
@@ -135,7 +142,7 @@ const Progress = () => {
                     {observedWeaknesses.length > 0 ? (
                       observedWeaknesses.map((w, idx) => (
                         <li key={idx} className="weakness-tag">
-                          ⚠ {w}
+                          • {w}
                         </li>
                       ))
                     ) : (
@@ -153,3 +160,4 @@ const Progress = () => {
 };
 
 export default Progress;
+
