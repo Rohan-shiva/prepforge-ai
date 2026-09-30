@@ -35,6 +35,13 @@ const VolumeIcon = ({ isMuted }) => (
   </svg>
 );
 
+const AwardIcon = () => (
+  <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#38bdf8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="8" r="7"/>
+    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+  </svg>
+);
+
 const InterviewVoice = () => {
   const { sessionId } = useParams();
   const navigate = useNavigate();
@@ -231,7 +238,7 @@ const InterviewVoice = () => {
 
           {!browserSupported && (
             <div className="voice-warning-box">
-              ⚠️ Note: Web Speech Recognition API is not supported in your current browser. You can still participate fully using text input for your answers!
+              Note: Web Speech Recognition API is not supported in your current browser. You can still participate fully using text input for your answers!
             </div>
           )}
 
@@ -282,8 +289,8 @@ const InterviewVoice = () => {
         {sessionCompleted ? (
           /* Session Completed Summary View */
           <div className="completed-summary-card">
-            <div className="completion-badge">🏆</div>
-            <h2>Interview Session Completed!</h2>
+            <div className="completion-badge"><AwardIcon /></div>
+            <h2>Interview Session Completed</h2>
             <p>Great job completing your mock interview session for <strong>{activeSession?.roleTitle}</strong>.</p>
 
             <div className="score-banner">
@@ -338,7 +345,7 @@ const InterviewVoice = () => {
               <div className="category-tag">{currentQuestion?.category || "Technical Question"}</div>
               <h2 className="question-text">{currentQuestion?.question}</h2>
               <button className="replay-voice-btn" onClick={() => speakText(currentQuestion?.question)}>
-                🔊 Replay Question Audio
+                Replay Question Audio
               </button>
             </div>
 
@@ -399,7 +406,7 @@ const InterviewVoice = () => {
                     <strong>Key Strengths Demonstrated:</strong>
                     <ul>
                       {evaluation.strengths.map((st, i) => (
-                        <li key={i}>✓ {st}</li>
+                        <li key={i}>• {st}</li>
                       ))}
                     </ul>
                   </div>
@@ -410,7 +417,7 @@ const InterviewVoice = () => {
                     <strong>Areas for Improvement / Weaknesses:</strong>
                     <ul>
                       {evaluation.weaknesses.map((wk, i) => (
-                        <li key={i}>⚠ {wk}</li>
+                        <li key={i}>• {wk}</li>
                       ))}
                     </ul>
                   </div>
@@ -425,7 +432,7 @@ const InterviewVoice = () => {
 
                 <div className="next-action-row">
                   <button className="next-btn" onClick={handleNextQuestion}>
-                    Proceed to Next Adaptive Question →
+                    Proceed to Next Adaptive Question
                   </button>
                 </div>
               </div>
@@ -438,3 +445,4 @@ const InterviewVoice = () => {
 };
 
 export default InterviewVoice;
+
