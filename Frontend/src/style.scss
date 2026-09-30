@@ -32,6 +32,12 @@ html, body, #root {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Custom Selection Highlight */
+::selection {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
