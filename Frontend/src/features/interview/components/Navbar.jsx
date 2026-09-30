@@ -68,7 +68,7 @@ const Navbar = () => {
           {user ? (
             <div className="user-profile">
               <button className="dashboard-link-btn" onClick={() => navigate('/dashboard')}>
-                Dashboard →
+                Dashboard
               </button>
               <div className="avatar" title={user.username || user.email}>
                 {(user.username || user.email || 'U')[0].toUpperCase()}
