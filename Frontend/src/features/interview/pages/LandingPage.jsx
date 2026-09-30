@@ -151,7 +151,7 @@ const LandingPage = () => {
 
           <div className="hero-cta-group">
             <button className="cta-primary-btn" onClick={handleStart}>
-              {user ? 'Go to Dashboard →' : 'Get Started Free'}
+              {user ? 'Go to Dashboard' : 'Get Started Free'}
             </button>
             <a href="#how-it-works" className="cta-secondary-btn">
               See How It Works
@@ -307,7 +307,7 @@ const LandingPage = () => {
           <h2>Ready to prepare for your next interview?</h2>
           <p>Create your custom interview plan and start practicing voice mock interviews today.</p>
           <button className="cta-primary-btn" onClick={handleStart}>
-            {user ? 'Start Preparing Now →' : 'Create Free Account →'}
+            {user ? 'Start Preparing Now' : 'Create Free Account'}
           </button>
         </section>
       </div>
