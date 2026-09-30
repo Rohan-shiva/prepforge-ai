@@ -49,6 +49,12 @@ const FileIcon = () => (
   </svg>
 );
 
+const FolderIcon = () => (
+  <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/>
+  </svg>
+);
+
 const Home = () => {
   const { loading, generateReport, reports, getReports } = useInterview();
   const [jobDescription, setjobDescription] = useState("");
@@ -99,7 +105,7 @@ const Home = () => {
             <span className="eyebrow-icon">
               <SparkleIcon />
             </span>
-            PREPFORGE AI — INTERVIEW PREPARATION
+            PREPFORGE AI | INTERVIEW PREPARATION
           </div>
 
           <h1>
@@ -317,7 +323,7 @@ const Home = () => {
                     </p>
 
                     <button className="open-plan-btn">
-                      Open Interview Plan →
+                      Open Interview Plan
                     </button>
                   </div>
                 </li>
@@ -325,7 +331,7 @@ const Home = () => {
             </ul>
           ) : (
             <div className="empty-plans-box">
-              <div className="empty-icon">📁</div>
+              <div className="empty-icon"><FolderIcon /></div>
               <h3>No interview plans yet</h3>
               <p>Generate your first personalized interview plan to see it here.</p>
             </div>
