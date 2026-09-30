@@ -1,310 +1,202 @@
 .interview-page {
   width: 100%;
   min-height: 100vh;
-
   display: grid;
-
-  grid-template-columns:
-    260px
-    minmax(0, 1fr)
-    300px;
-
-  background: #0d0f14;
-
-  color: #e8e8ed;
-
+  grid-template-columns: 260px minmax(0, 1fr) 300px;
+  background: #0b0f19;
+  color: #f8fafc;
   overflow: hidden;
 }
 
-
-// --------------------------------------------------
 // Shared SVG
-// --------------------------------------------------
-
 .interview-page svg {
   fill: none;
-
   stroke: currentColor;
-
   stroke-width: 1.6;
-
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-
-// --------------------------------------------------
 // Left sidebar
-// --------------------------------------------------
-
 .interview-sidebar {
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
-
-  border-right: 1px solid #272a31;
-
-  background: #111318;
+  border-right: 1px solid #1e293b;
+  background: #0f172a;
 }
-
 
 .sidebar-top {
-  padding: 26px 22px;
-
-  border-bottom: 1px solid #272a31;
+  padding: 24px 20px;
+  border-bottom: 1px solid #1e293b;
 }
-
 
 .sidebar-brand {
   display: flex;
   align-items: center;
-
   gap: 11px;
 }
-
 
 .brand-mark {
   width: 34px;
   height: 34px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border: 1px solid #4c4763;
-  border-radius: 10px;
-
-  background: #211f2c;
-
-  color: #bdb5db;
-
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
 }
 
-
 .sidebar-brand div:last-child {
   display: flex;
   flex-direction: column;
-
   gap: 2px;
 
   strong {
-    color: #e8e8ec;
-
+    color: #f8fafc;
     font-size: 13px;
     font-weight: 600;
   }
 
   span {
-    color: #646772;
-
+    color: #64748b;
     font-size: 10px;
   }
 }
 
-
-// --------------------------------------------------
 // Navigation
-// --------------------------------------------------
-
 .interview-navigation {
   flex: 1;
-
   padding: 24px 12px;
-
 }
-
 
 .navigation-label {
   display: block;
-
   padding: 0 10px;
-
   margin-bottom: 10px;
-
-  color: #5c606b;
-
+  color: #64748b;
   font-size: 9px;
   font-weight: 700;
-
   letter-spacing: 1.2px;
 }
 
-
 .navigation-item {
   width: 100%;
-
   display: flex;
   align-items: center;
-
   gap: 11px;
-
-  padding: 12px 10px;
-
+  padding: 10px;
   margin-bottom: 5px;
-
-  border: none;
-  border-radius: 10px;
-
+  border: 1px solid transparent;
+  border-radius: 6px;
   background: transparent;
-
-  color: #7b7e88;
-
+  color: #94a3b8;
   text-align: left;
-
   cursor: pointer;
-
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
-
+  transition: all 0.15s ease;
 
   &:hover {
-    background: #181a20;
-
-    color: #b4b5bd;
+    background: #1e293b;
+    color: #f8fafc;
   }
 
-
   &.active {
-    background: #22212c;
-
-    color: #d3cee7;
-
-    box-shadow:
-      inset 0 0 0 1px
-      rgba(139, 128, 184, 0.12);
+    background: #1e293b;
+    color: #38bdf8;
+    border-color: #334155;
+    font-weight: 600;
   }
 }
 
-
 .navigation-icon {
-  width: 34px;
-  height: 34px;
-
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border-radius: 8px;
-
-  background: #191b21;
-
-  color: #757985;
-
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
-
+  border-radius: 6px;
+  background: #0b0f19;
+  color: #94a3b8;
+  transition: all 0.15s ease;
 
   svg {
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
   }
-
 
   .navigation-item.active & {
-    background: #302d40;
-
-    color: #bbb1df;
+    background: #2563eb;
+    color: #ffffff;
   }
 }
-
 
 .navigation-text {
   display: flex;
   flex-direction: column;
-
   gap: 3px;
-
 
   strong {
     font-size: 12px;
     font-weight: 600;
   }
 
-
   small {
-    color: #60636d;
-
+    color: #64748b;
     font-size: 9px;
   }
 }
 
-
-// --------------------------------------------------
 // Sidebar footer
-// --------------------------------------------------
-
 .sidebar-footer {
   padding: 18px;
-
-  border-top: 1px solid #272a31;
+  border-top: 1px solid #1e293b;
 }
-
 
 .score-mini {
   display: flex;
   align-items: center;
-
   gap: 10px;
 }
-
 
 .score-ring {
   width: 42px;
   height: 42px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border: 2px solid #5b4664;
-  border-radius: 50%;
-
-  color: #c2a3ce;
-
+  border: 2px solid #2563eb;
+  border-radius: 6px;
+  color: #38bdf8;
   font-size: 10px;
   font-weight: 700;
 }
 
-
 .score-mini > div:last-child {
   display: flex;
   flex-direction: column;
-
   gap: 3px;
 
-
   strong {
-    color: #a9abb2;
-
+    color: #f8fafc;
     font-size: 10px;
   }
 
-
   small {
-    color: #5d6068;
-
+    color: #64748b;
     font-size: 8px;
   }
 }
 
-
-// --------------------------------------------------
 // Main content
-// --------------------------------------------------
-
 .interview-content {
   height: 100vh;
-
   overflow: hidden;
-
-  background: #0f1116;
+  background: #0b0f19;
 }
 
 
