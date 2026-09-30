@@ -16,7 +16,16 @@ const LandingPage = () => {
 
   React.useEffect(() => {
     document.title = "PrepForge AI | AI-Powered Interview Preparation";
-  }, []);
+    if (window.location.hash) {
+      const id = window.location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [window.location.hash]);
 
   const handleStart = () => {
     if (user) {

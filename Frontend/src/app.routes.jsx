@@ -21,7 +21,7 @@ const AppLayout = () => {
 };
 
 const RootRouteHandler = () => {
-  const { user, loading } = useAuth();
+  const { loading } = useAuth();
 
   if (loading) {
     return (
@@ -38,10 +38,6 @@ const RootRouteHandler = () => {
         <h2>Checking authentication...</h2>
       </main>
     );
-  }
-
-  if (user) {
-    return <Home />;
   }
 
   return <LandingPage />;
