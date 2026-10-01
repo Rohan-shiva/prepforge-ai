@@ -1,10 +1,10 @@
 .landing-page {
   position: relative;
   min-height: 100vh;
-  background: #0b0f19;
-  background-image: radial-gradient(#1e293b 1px, transparent 1px);
+  background: #0d0f14;
+  background-image: radial-gradient(#242936 1px, transparent 1px);
   background-size: 24px 24px;
-  color: #f8fafc;
+  color: #f3f4f6;
   overflow: hidden;
 
   .landing-background {
@@ -38,9 +38,9 @@
       font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      color: #38bdf8;
-      background: #0f172a;
-      border: 1px solid #1e293b;
+      color: #34d399;
+      background: #13161f;
+      border: 1px solid #242936;
       padding: 0.4rem 1rem;
       border-radius: 6px;
       margin-bottom: 1.5rem;
@@ -48,7 +48,7 @@
       .sparkle svg {
         width: 14px;
         height: 14px;
-        color: #38bdf8;
+        color: #34d399;
       }
     }
 
@@ -56,19 +56,19 @@
       font-size: 3.2rem;
       font-weight: 800;
       line-height: 1.15;
-      color: #f8fafc;
+      color: #f3f4f6;
       margin-bottom: 1.25rem;
       letter-spacing: -0.02em;
 
       .hero-highlight {
-        color: #38bdf8;
+        color: #34d399;
       }
     }
 
     .hero-subtext {
       font-size: 1.1rem;
       line-height: 1.6;
-      color: #94a3b8;
+      color: #9ca3af;
       margin-bottom: 2.25rem;
       max-width: 700px;
     }
@@ -81,34 +81,34 @@
 
       .cta-primary-btn {
         padding: 0.85rem 1.75rem;
-        background: #2563eb;
+        background: #10b981;
         color: #ffffff;
         font-weight: 600;
         font-size: 0.95rem;
-        border: 1px solid #3b82f6;
+        border: 1px solid #059669;
         border-radius: 6px;
         cursor: pointer;
         transition: all 0.15s ease;
 
         &:hover {
-          background: #1d4ed8;
-          border-color: #2563eb;
+          background: #059669;
+          border-color: #047857;
         }
       }
 
       .cta-secondary-btn {
         padding: 0.85rem 1.75rem;
-        background: #0f172a;
-        color: #cbd5e1;
+        background: #13161f;
+        color: #9ca3af;
         font-weight: 600;
         font-size: 0.95rem;
         text-decoration: none;
-        border: 1px solid #1e293b;
+        border: 1px solid #242936;
         border-radius: 6px;
         transition: all 0.15s ease;
 
         &:hover {
-          background: #1e293b;
+          background: #1c212d;
           color: #ffffff;
         }
       }
@@ -118,8 +118,8 @@
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      background: #0f172a;
-      border: 1px solid #1e293b;
+      background: #13161f;
+      border: 1px solid #242936;
       border-radius: 8px;
       padding: 1rem 1.75rem;
 
@@ -129,19 +129,19 @@
         align-items: center;
 
         strong {
-          color: #f8fafc;
+          color: #f3f4f6;
           font-size: 1.1rem;
           font-weight: 700;
         }
 
         span {
-          color: #94a3b8;
+          color: #9ca3af;
           font-size: 0.8rem;
         }
       }
 
       .stat-divider {
-        color: #334155;
+        color: #2e3546;
       }
     }
   }
@@ -156,7 +156,7 @@
         font-size: 0.75rem;
         font-weight: 700;
         letter-spacing: 0.08em;
-        color: #38bdf8;
+        color: #34d399;
         text-transform: uppercase;
         display: block;
         margin-bottom: 0.5rem;
@@ -165,13 +165,13 @@
       h2 {
         font-size: 2.2rem;
         font-weight: 700;
-        color: #f8fafc;
+        color: #f3f4f6;
         margin-bottom: 0.5rem;
         letter-spacing: -0.01em;
       }
 
       p {
-        color: #94a3b8;
+        color: #9ca3af;
         font-size: 1rem;
       }
     }
@@ -184,23 +184,23 @@
     gap: 1.25rem;
 
     .workflow-card {
-      background: #0f172a;
-      border: 1px solid #1e293b;
+      background: #13161f;
+      border: 1px solid #242936;
       border-radius: 8px;
       padding: 1.5rem;
       position: relative;
       transition: all 0.15s ease;
 
       &:hover {
-        border-color: #334155;
+        border-color: #2e3546;
       }
 
       .step-number {
         font-size: 0.8rem;
         font-weight: 700;
-        color: #38bdf8;
-        background: #1e293b;
-        border: 1px solid #334155;
+        color: #34d399;
+        background: #1c212d;
+        border: 1px solid #2e3546;
         padding: 0.2rem 0.6rem;
         border-radius: 4px;
         display: inline-block;
@@ -210,13 +210,13 @@
       h3 {
         font-size: 1rem;
         font-weight: 600;
-        color: #f8fafc;
+        color: #f3f4f6;
         margin-bottom: 0.35rem;
       }
 
       p {
         font-size: 0.85rem;
-        color: #94a3b8;
+        color: #9ca3af;
         margin: 0;
       }
     }
@@ -229,21 +229,21 @@
     gap: 1.5rem;
 
     .feature-card {
-      background: #0f172a;
-      border: 1px solid #1e293b;
+      background: #13161f;
+      border: 1px solid #242936;
       border-radius: 8px;
       padding: 1.75rem;
       transition: all 0.15s ease;
 
       &:hover {
-        border-color: #334155;
+        border-color: #2e3546;
       }
 
       .feat-icon {
         width: 40px;
         height: 40px;
-        background: #1e293b;
-        border: 1px solid #334155;
+        background: #1c212d;
+        border: 1px solid #2e3546;
         border-radius: 6px;
         display: flex;
         align-items: center;
@@ -253,20 +253,20 @@
         svg {
           width: 20px;
           height: 20px;
-          color: #38bdf8;
+          color: #34d399;
         }
       }
 
       h3 {
         font-size: 1.1rem;
         font-weight: 600;
-        color: #f8fafc;
+        color: #f3f4f6;
         margin-bottom: 0.5rem;
       }
 
       p {
         font-size: 0.9rem;
-        color: #94a3b8;
+        color: #9ca3af;
         line-height: 1.5;
         margin: 0;
       }
@@ -275,8 +275,8 @@
 
   /* Voice Showcase */
   .voice-showcase-card {
-    background: #0f172a;
-    border: 1px solid #1e293b;
+    background: #13161f;
+    border: 1px solid #242936;
     border-radius: 12px;
     padding: 3rem;
     text-align: center;
@@ -286,9 +286,9 @@
       font-size: 0.75rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      color: #38bdf8;
-      background: #1e293b;
-      border: 1px solid #334155;
+      color: #34d399;
+      background: #1c212d;
+      border: 1px solid #2e3546;
       padding: 0.3rem 0.8rem;
       border-radius: 6px;
       margin-bottom: 1rem;
@@ -297,12 +297,12 @@
     h2 {
       font-size: 2.2rem;
       font-weight: 700;
-      color: #f8fafc;
+      color: #f3f4f6;
       margin-bottom: 1rem;
     }
 
     p {
-      color: #94a3b8;
+      color: #9ca3af;
       font-size: 1rem;
       max-width: 750px;
       margin: 0 auto 2.5rem;
@@ -317,8 +317,8 @@
       flex-wrap: wrap;
 
       .v-step {
-        background: #0b0f19;
-        border: 1px solid #1e293b;
+        background: #0d0f14;
+        border: 1px solid #242936;
         border-radius: 8px;
         padding: 1.25rem;
         width: 180px;
@@ -330,7 +330,7 @@
           width: 32px;
           height: 32px;
           border-radius: 6px;
-          background: #2563eb;
+          background: #10b981;
           color: #ffffff;
           font-weight: 700;
           display: flex;
@@ -341,18 +341,18 @@
 
         strong {
           font-size: 0.9rem;
-          color: #f8fafc;
+          color: #f3f4f6;
           margin-bottom: 0.25rem;
         }
 
         span {
           font-size: 0.78rem;
-          color: #94a3b8;
+          color: #9ca3af;
         }
       }
 
       .v-arrow {
-        color: #3b82f6;
+        color: #10b981;
         font-size: 1.5rem;
         font-weight: 700;
       }
@@ -366,18 +366,18 @@
     gap: 1.5rem;
 
     .demo-card {
-      background: #0f172a;
-      border: 1px solid #1e293b;
+      background: #13161f;
+      border: 1px solid #242936;
       border-radius: 12px;
       padding: 2rem;
 
       h3 {
         font-size: 1.1rem;
         font-weight: 600;
-        color: #f8fafc;
+        color: #f3f4f6;
         margin-bottom: 1.5rem;
         padding-bottom: 0.75rem;
-        border-bottom: 1px solid #1e293b;
+        border-bottom: 1px solid #242936;
       }
 
       .demo-progression-list {
@@ -393,19 +393,19 @@
           span {
             width: 100px;
             font-size: 0.85rem;
-            color: #94a3b8;
+            color: #9ca3af;
           }
 
           .prog-bar-bg {
             flex: 1;
             height: 10px;
-            background: #0b0f19;
+            background: #0d0f14;
             border-radius: 4px;
             overflow: hidden;
 
             .prog-bar-fill {
               height: 100%;
-              background: #2563eb;
+              background: #10b981;
               border-radius: 4px;
             }
           }
@@ -414,7 +414,7 @@
             width: 60px;
             text-align: right;
             font-size: 0.9rem;
-            color: #38bdf8;
+            color: #34d399;
           }
         }
       }
@@ -428,18 +428,18 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          background: #0b0f19;
-          border: 1px solid #1e293b;
+          background: #0d0f14;
+          border: 1px solid #242936;
           padding: 0.85rem 1.25rem;
           border-radius: 8px;
 
           strong {
-            color: #f8fafc;
+            color: #f3f4f6;
             font-size: 0.9rem;
           }
 
           .prog-chain {
-            color: #38bdf8;
+            color: #34d399;
             font-weight: 700;
             font-size: 0.9rem;
           }
@@ -450,7 +450,7 @@
         display: block;
         margin-top: 1rem;
         font-size: 0.78rem;
-        color: #64748b;
+        color: #6b7280;
         font-style: italic;
       }
     }
@@ -458,8 +458,8 @@
 
   /* Final CTA */
   .final-cta-section {
-    background: #0f172a;
-    border: 1px solid #1e293b;
+    background: #13161f;
+    border: 1px solid #242936;
     border-radius: 12px;
     padding: 4rem 2rem;
     text-align: center;
@@ -467,30 +467,31 @@
     h2 {
       font-size: 2.4rem;
       font-weight: 700;
-      color: #f8fafc;
+      color: #f3f4f6;
       margin-bottom: 0.75rem;
     }
 
     p {
-      color: #94a3b8;
+      color: #9ca3af;
       font-size: 1.05rem;
       margin-bottom: 2rem;
     }
 
     .cta-primary-btn {
       padding: 0.9rem 2rem;
-      background: #2563eb;
+      background: #10b981;
       color: #ffffff;
       font-weight: 600;
       font-size: 1rem;
-      border: 1px solid #3b82f6;
+      border: 1px solid #059669;
       border-radius: 6px;
       cursor: pointer;
       transition: all 0.15s ease;
 
       &:hover {
-        background: #1d4ed8;
+        background: #059669;
       }
     }
   }
 }
+
