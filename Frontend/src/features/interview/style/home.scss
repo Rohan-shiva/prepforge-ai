@@ -7,10 +7,10 @@
   padding: 60px 24px;
   box-sizing: border-box;
   overflow: hidden;
-  background: #0b0f19;
-  background-image: radial-gradient(#1e293b 1px, transparent 1px);
+  background: #0d0f14;
+  background-image: radial-gradient(#242936 1px, transparent 1px);
   background-size: 24px 24px;
-  color: #f8fafc;
+  color: #f3f4f6;
 }
 
 // Background
@@ -38,7 +38,7 @@
   align-items: center;
   gap: 9px;
   margin-bottom: 16px;
-  color: #38bdf8;
+  color: #34d399;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -50,15 +50,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #1e293b;
+  border: 1px solid #242936;
   border-radius: 6px;
-  background: #0f172a;
+  background: #13161f;
 
   svg {
     width: 14px;
     height: 14px;
     fill: none;
-    stroke: #38bdf8;
+    stroke: #34d399;
     stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -67,7 +67,7 @@
 
 .page-header h1 {
   margin: 0;
-  color: #f8fafc;
+  color: #f3f4f6;
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 700;
   line-height: 1.15;
@@ -76,13 +76,13 @@
 
 .page-header h1 span {
   display: block;
-  color: #38bdf8;
+  color: #34d399;
 }
 
 .page-header p {
   max-width: 650px;
   margin: 16px auto 0;
-  color: #94a3b8;
+  color: #9ca3af;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -102,7 +102,7 @@
   left: 65px;
   right: 65px;
   height: 1px;
-  background: #1e293b;
+  background: #242936;
 }
 
 .progress-step {
@@ -111,7 +111,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  color: #64748b;
+  color: #6b7280;
 
   span {
     width: 32px;
@@ -119,9 +119,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #1e293b;
+    border: 1px solid #242936;
     border-radius: 6px;
-    background: #0f172a;
+    background: #13161f;
     font-size: 11px;
     font-weight: 700;
   }
@@ -139,18 +139,18 @@
 
   small {
     margin-top: 3px;
-    color: #64748b;
+    color: #6b7280;
     font-size: 10px;
   }
 }
 
 .progress-step.active {
-  color: #f8fafc;
+  color: #f3f4f6;
 
   span {
-    border-color: #2563eb;
-    background: #1e293b;
-    color: #38bdf8;
+    border-color: #10b981;
+    background: #1c212d;
+    color: #34d399;
   }
 }
 
@@ -167,9 +167,9 @@
 
 .input-card,
 .resume-section {
-  border: 1px solid #1e293b;
+  border: 1px solid #242936;
   border-radius: 10px;
-  background: #0f172a;
+  background: #13161f;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
@@ -202,15 +202,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #1e293b;
+  border: 1px solid #242936;
   border-radius: 6px;
-  background: #0b0f19;
+  background: #0d0f14;
 
   svg {
     width: 19px;
     height: 19px;
     fill: none;
-    stroke: #38bdf8;
+    stroke: #34d399;
     stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -218,18 +218,18 @@
 }
 
 .profile-icon {
-  background: #0b0f19;
-  border-color: #1e293b;
+  background: #0d0f14;
+  border-color: #242936;
 
   svg {
-    stroke: #38bdf8;
+    stroke: #34d399;
   }
 }
 
 .card-label {
   display: block;
   margin-bottom: 5px;
-  color: #64748b;
+  color: #6b7280;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -238,14 +238,14 @@
 .card-heading h2,
 .resume-heading h2 {
   margin: 0;
-  color: #f8fafc;
+  color: #f3f4f6;
   font-size: 17px;
   font-weight: 600;
 }
 
 .card-heading p {
   margin: 5px 0 0;
-  color: #94a3b8;
+  color: #9ca3af;
   font-size: 12px;
 }
 
@@ -267,28 +267,28 @@ textarea {
   padding: 17px;
   box-sizing: border-box;
   resize: none;
-  border: 1px solid #1e293b;
+  border: 1px solid #242936;
   border-radius: 6px;
   outline: none;
-  background: #0b0f19;
-  color: #f8fafc;
+  background: #0d0f14;
+  color: #f3f4f6;
   font-family: inherit;
   font-size: 13px;
   line-height: 1.7;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   &::placeholder {
-    color: #64748b;
+    color: #6b7280;
   }
 
   &:hover {
-    border-color: #334155;
+    border-color: #2e3546;
   }
 
   &:focus {
-    border-color: #2563eb;
-    background: #0b0f19;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    border-color: #10b981;
+    background: #0d0f14;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
   }
 }
 
@@ -296,7 +296,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   padding: 10px 2px 0;
-  color: #64748b;
+  color: #6b7280;
   font-size: 10px;
 }
 
@@ -338,9 +338,9 @@ textarea {
 
 .optional {
   padding: 4px 8px;
-  border: 1px solid #1e293b;
+  border: 1px solid #242936;
   border-radius: 6px;
-  color: #64748b;
+  color: #6b7280;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -357,13 +357,13 @@ textarea {
   gap: 10px;
   margin-bottom: 14px;
   padding: 10px 11px;
-  border: 1px solid #1e293b;
+  border: 1px solid #242936;
   border-radius: 6px;
-  background: #0b0f19;
+  background: #0d0f14;
   transition: border-color 0.2s ease;
 
   &:hover {
-    border-color: #334155;
+    border-color: #2e3546;
   }
 }
 
@@ -375,9 +375,9 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-top: 1px;
-  border: 1px solid #334155;
+  border: 1px solid #2e3546;
   border-radius: 50%;
-  color: #38bdf8;
+  color: #34d399;
   font-size: 10px;
   font-weight: 600;
 }
@@ -389,14 +389,14 @@ textarea {
 .note-content strong {
   display: block;
   margin-bottom: 3px;
-  color: #f8fafc;
+  color: #f3f4f6;
   font-size: 10px;
   font-weight: 600;
 }
 
 .note-content p {
   margin: 0;
-  color: #94a3b8;
+  color: #9ca3af;
   font-size: 10px;
   line-height: 1.5;
 }
@@ -413,15 +413,15 @@ textarea {
   gap: 14px;
   padding: 13px;
   box-sizing: border-box;
-  border: 1px dashed #334155;
+  border: 1px dashed #2e3546;
   border-radius: 6px;
-  background: #0b0f19;
+  background: #0d0f14;
   cursor: pointer;
   transition: border-color 0.2s ease, background 0.2s ease;
 
   &:hover {
-    border-color: #2563eb;
-    background: #0f172a;
+    border-color: #10b981;
+    background: #13161f;
   }
 
   input {
@@ -437,13 +437,13 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background: #1e293b;
+  background: #1c212d;
 
   svg {
     width: 18px;
     height: 18px;
     fill: none;
-    stroke: #38bdf8;
+    stroke: #34d399;
     stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -457,13 +457,13 @@ textarea {
   gap: 4px;
 
   strong {
-    color: #f8fafc;
+    color: #f3f4f6;
     font-size: 12px;
     font-weight: 600;
   }
 
   span {
-    color: #94a3b8;
+    color: #9ca3af;
     font-size: 10px;
   }
 }
@@ -473,9 +473,9 @@ textarea {
   align-items: center;
   gap: 5px;
   padding: 5px 8px;
-  border: 1px solid #1e293b;
+  border: 1px solid #242936;
   border-radius: 6px;
-  color: #94a3b8;
+  color: #9ca3af;
   font-size: 9px;
   font-weight: 700;
 
@@ -502,19 +502,19 @@ textarea {
   align-items: center;
   gap: 13px;
   padding: 12px 16px;
-  border: 1px solid #2563eb;
+  border: 1px solid #059669;
   border-radius: 6px;
-  background: #2563eb;
+  background: #10b981;
   color: #ffffff;
   cursor: pointer;
   text-align: left;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
   transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 
   &:hover {
     transform: translateY(-1px);
-    background: #1d4ed8;
-    border-color: #1d4ed8;
+    background: #059669;
+    border-color: #047857;
   }
 
   &:active {
@@ -556,7 +556,7 @@ textarea {
   }
 
   small {
-    color: #e0f2fe;
+    color: #d1fae5;
     font-size: 10px;
   }
 }
@@ -589,14 +589,14 @@ textarea {
   width: 100%;
   margin: 60px auto 40px;
   padding: 28px;
-  border: 1px solid #1e293b;
+  border: 1px solid #242936;
   border-radius: 10px;
-  background: #0f172a;
+  background: #13161f;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 
   h2 {
     margin: 0 0 20px;
-    color: #f8fafc;
+    color: #f3f4f6;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -611,8 +611,8 @@ textarea {
     margin: 0;
 
     .report-item {
-      background: #0b0f19;
-      border: 1px solid #1e293b;
+      background: #0d0f14;
+      border: 1px solid #242936;
       border-radius: 6px;
       padding: 18px;
       cursor: pointer;
@@ -623,7 +623,7 @@ textarea {
       transition: border-color 0.2s ease, transform 0.2s ease;
 
       &:hover {
-        border-color: #2563eb;
+        border-color: #10b981;
         transform: translateY(-2px);
       }
 
@@ -631,13 +631,13 @@ textarea {
         h3 {
           font-size: 15px;
           font-weight: 600;
-          color: #f8fafc;
+          color: #f3f4f6;
           margin-bottom: 4px;
         }
 
         .report-meta {
           font-size: 12px;
-          color: #94a3b8;
+          color: #9ca3af;
           margin: 0;
         }
       }
@@ -647,22 +647,22 @@ textarea {
         align-items: center;
         justify-content: space-between;
         padding-top: 12px;
-        border-top: 1px solid #1e293b;
+        border-top: 1px solid #242936;
 
         .match-score {
           font-size: 12px;
           font-weight: 700;
           margin: 0;
 
-          &.score-high { color: #4ade80; }
+          &.score-high { color: #34d399; }
           &.score-mid { color: #facc15; }
           &.score-low { color: #f87171; }
         }
 
         .open-plan-btn {
-          background: #1e293b;
-          color: #38bdf8;
-          border: 1px solid #334155;
+          background: #1c212d;
+          color: #34d399;
+          border: 1px solid #2e3546;
           padding: 5px 10px;
           border-radius: 6px;
           font-size: 11px;
@@ -671,9 +671,9 @@ textarea {
           transition: background 0.2s ease, border-color 0.2s ease;
 
           &:hover {
-            background: #2563eb;
+            background: #10b981;
             color: #ffffff;
-            border-color: #2563eb;
+            border-color: #10b981;
           }
         }
       }
@@ -681,8 +681,8 @@ textarea {
   }
 
   .empty-plans-box {
-    background: #0b0f19;
-    border: 1px dashed #1e293b;
+    background: #0d0f14;
+    border: 1px dashed #242936;
     border-radius: 6px;
     padding: 32px;
     text-align: center;
@@ -695,13 +695,13 @@ textarea {
     h3 {
       font-size: 15px;
       font-weight: 600;
-      color: #f8fafc;
+      color: #f3f4f6;
       margin-bottom: 4px;
     }
 
     p {
       font-size: 13px;
-      color: #94a3b8;
+      color: #9ca3af;
       margin: 0;
     }
   }
@@ -713,7 +713,7 @@ textarea {
   justify-content: center;
   gap: 12px;
   margin-top: 22px;
-  color: #64748b;
+  color: #6b7280;
   font-size: 10px;
 
   div {
@@ -727,11 +727,11 @@ textarea {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #22c55e;
+  background: #10b981;
 }
 
 .separator {
-  color: #1e293b;
+  color: #242936;
 }
 
 @media (max-width: 900px) {
@@ -746,4 +746,5 @@ textarea {
   .job-card {
     min-height: auto;
   }
-}
+}
+
