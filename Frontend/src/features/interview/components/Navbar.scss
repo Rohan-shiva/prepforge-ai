@@ -1,7 +1,7 @@
 .app-navbar {
   width: 100%;
-  background: #0f172a;
-  border-bottom: 1px solid #1e293b;
+  background: #13161f;
+  border-bottom: 1px solid #242936;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -24,8 +24,8 @@
     .brand-logo {
       width: 34px;
       height: 34px;
-      background: #2563eb;
-      border: 1px solid #3b82f6;
+      background: #10b981;
+      border: 1px solid #059669;
       border-radius: 6px;
       display: flex;
       align-items: center;
@@ -39,7 +39,7 @@
     .brand-name {
       font-size: 1.1rem;
       font-weight: 700;
-      color: #f8fafc;
+      color: #f3f4f6;
       letter-spacing: -0.01em;
     }
   }
@@ -50,7 +50,7 @@
     gap: 1.25rem;
 
     .nav-link {
-      color: #94a3b8;
+      color: #9ca3af;
       text-decoration: none;
       font-size: 0.92rem;
       font-weight: 500;
@@ -59,15 +59,15 @@
       transition: all 0.15s ease;
 
       &:hover {
-        color: #f8fafc;
-        background: #1e293b;
+        color: #f3f4f6;
+        background: #1c212d;
       }
 
       &.active {
-        color: #38bdf8;
-        background: #1e293b;
+        color: #34d399;
+        background: #1c212d;
         font-weight: 600;
-        border: 1px solid #334155;
+        border: 1px solid #2e3546;
       }
     }
   }
@@ -79,7 +79,7 @@
       gap: 0.75rem;
 
       .login-nav-btn {
-        color: #cbd5e1;
+        color: #9ca3af;
         text-decoration: none;
         font-size: 0.9rem;
         font-weight: 500;
@@ -89,13 +89,13 @@
 
         &:hover {
           color: #ffffff;
-          background: #1e293b;
+          background: #1c212d;
         }
       }
 
       .register-nav-btn {
-        background: #2563eb;
-        border: 1px solid #3b82f6;
+        background: #10b981;
+        border: 1px solid #059669;
         color: #ffffff;
         text-decoration: none;
         font-size: 0.9rem;
@@ -105,7 +105,7 @@
         transition: all 0.15s ease;
 
         &:hover {
-          background: #1d4ed8;
+          background: #059669;
         }
       }
     }
@@ -116,9 +116,9 @@
       gap: 0.75rem;
 
       .dashboard-link-btn {
-        background: #1e293b;
-        color: #38bdf8;
-        border: 1px solid #334155;
+        background: #1c212d;
+        color: #34d399;
+        border: 1px solid #2e3546;
         padding: 0.35rem 0.75rem;
         border-radius: 6px;
         font-size: 0.85rem;
@@ -127,7 +127,7 @@
         transition: all 0.15s ease;
 
         &:hover {
-          background: #334155;
+          background: #242936;
           color: #ffffff;
         }
       }
@@ -136,9 +136,9 @@
         width: 32px;
         height: 32px;
         border-radius: 6px;
-        background: #1e293b;
-        border: 1px solid #334155;
-        color: #38bdf8;
+        background: #1c212d;
+        border: 1px solid #2e3546;
+        color: #34d399;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -149,7 +149,7 @@
       .logout-btn {
         background: rgba(239, 68, 68, 0.1);
         color: #f87171;
-        border: 1px solid rgba(239, 68, 68, 0.3);
+        border: 1px solid rgba(239, 68, 68, 0.25);
         padding: 0.35rem 0.75rem;
         border-radius: 6px;
         font-size: 0.82rem;
@@ -165,3 +165,4 @@
     }
   }
 }
+
