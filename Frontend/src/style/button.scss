@@ -3,7 +3,7 @@
   border-radius: 6px;
   border: 1px solid transparent;
   outline: none;
-  background-color: #2563eb;
+  background-color: #10b981;
   color: #ffffff;
   font-weight: 500;
   font-size: 0.9rem;
@@ -15,30 +15,30 @@
   transition: all 0.15s ease;
 
   &:hover {
-    background-color: #1d4ed8;
+    background-color: #059669;
   }
 
   &.primary-button {
-    background-color: #2563eb;
-    border-color: #3b82f6;
+    background-color: #10b981;
+    border-color: #059669;
     &:hover {
-      background-color: #1d4ed8;
-      border-color: #2563eb;
+      background-color: #059669;
+      border-color: #047857;
     }
   }
 
   &.secondary-button {
-    background-color: #1e293b;
-    border-color: #334155;
-    color: #f8fafc;
+    background-color: #1c212d;
+    border-color: #2e3546;
+    color: #f3f4f6;
     &:hover {
-      background-color: #334155;
+      background-color: #242936;
       color: #ffffff;
     }
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.4);
   }
 
   &:active {

@@ -1,17 +1,17 @@
 @use "./style/button.scss";
 
 :root {
-  --bg-dark: #0b0f19;
-  --bg-card: #0f172a;
-  --bg-card-hover: #1e293b;
-  --border-color: #1e293b;
-  --border-light: #334155;
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --accent-blue: #2563eb;
-  --accent-blue-hover: #1d4ed8;
-  --accent-light: #38bdf8;
+  --bg-dark: #0d0f14;
+  --bg-card: #13161f;
+  --bg-card-hover: #1c212d;
+  --border-color: #242936;
+  --border-light: #2e3546;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --accent-primary: #10b981;
+  --accent-primary-hover: #059669;
+  --accent-light: #34d399;
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -34,7 +34,7 @@ html, body, #root {
 
 /* Custom Selection Highlight */
 ::selection {
-  background-color: #2563eb;
+  background-color: #10b981;
   color: #ffffff;
 }
 
@@ -44,12 +44,12 @@ html, body, #root {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0b0f19;
+  background: #0d0f14;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #242936;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
-}
+  background: #2e3546;
+}
