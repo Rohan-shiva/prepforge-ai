@@ -86,6 +86,16 @@ main {
       color: #9ca3af;
       margin: 0;
     }
+
+    .auth-error-alert {
+      padding: 12px 14px;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 6px;
+      color: #f87171;
+      font-size: 13px;
+      line-height: 1.5;
+    }
   }
 
   form {

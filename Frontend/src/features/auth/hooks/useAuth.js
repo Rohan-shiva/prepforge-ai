@@ -11,7 +11,6 @@ export const useAuth = () => {
   const { user, setUser, loading, setLoading } = context;
 
   const handleLogin = async ({ email, password }) => {
-    setLoading(true);
     try {
       const data = await login({ email, password });
       if (data && data.user) {
@@ -19,21 +18,19 @@ export const useAuth = () => {
           localStorage.setItem("token", data.token);
         }
         setUser(data.user);
-        return true;
+        return { success: true, user: data.user, message: data.message };
       }
-      return false;
+      return { success: false, message: data?.message || "Invalid credentials." };
     } catch (err) {
       console.error("Login error:", err);
       localStorage.removeItem("token");
       setUser(null);
-      return false;
-    } finally {
-      setLoading(false);
+      const message = err.response?.data?.message || err.message || "Failed to login. Please try again.";
+      return { success: false, message };
     }
   };
 
   const handleRegister = async ({ username, email, password }) => {
-    setLoading(true);
     try {
       const data = await register({ username, email, password });
       if (data && data.user) {
@@ -41,16 +38,15 @@ export const useAuth = () => {
           localStorage.setItem("token", data.token);
         }
         setUser(data.user);
-        return true;
+        return { success: true, user: data.user, message: data.message };
       }
-      return false;
+      return { success: false, message: data?.message || "Registration failed." };
     } catch (err) {
       console.error("Register error:", err);
       localStorage.removeItem("token");
       setUser(null);
-      return false;
-    } finally {
-      setLoading(false);
+      const message = err.response?.data?.message || err.message || "Failed to register. Please try again.";
+      return { success: false, message };
     }
   };
 
@@ -61,7 +57,6 @@ export const useAuth = () => {
     } catch (err) {
       console.error("Logout error:", err);
     } finally {
-      // Clear auth-specific keys without wiping unrelated keys
       localStorage.removeItem("user");
       localStorage.removeItem("token");
       localStorage.removeItem("auth");

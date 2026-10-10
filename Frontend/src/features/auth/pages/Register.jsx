@@ -1,31 +1,58 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
-import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
-  const { loading, handleRegister } = useAuth()
+  const { user, loading, handleRegister } = useAuth()
   const navigate = useNavigate()
 
   const [username, setUsername] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.title = "PrepForge AI | Register";
-  }, []);
+    if (user && !loading) {
+      navigate('/dashboard');
+    }
+  }, [user, loading, navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await handleRegister({ username, email, password })
-    navigate('/dashboard')
+    setError("");
+
+    if (!username.trim() || !email.trim() || !password.trim()) {
+      setError("Please fill in all required fields.");
+      return;
+    }
+
+    if (password.length < 6) {
+      setError("Password must be at least 6 characters long.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    const result = await handleRegister({
+      username: username.trim(),
+      email: email.trim(),
+      password
+    });
+    setIsSubmitting(false);
+
+    if (result.success) {
+      navigate('/dashboard');
+    } else {
+      setError(result.message || "Registration failed. Please try again.");
+    }
   }
 
   if (loading) {
     return (
       <main>
         <div className="form-container">
-          <h2>Creating your account...</h2>
+          <h2>Checking authentication...</h2>
         </div>
       </main>
     )
@@ -36,6 +63,8 @@ const Register = () => {
       <div className="form-container">
         <h1>Join PrepForge AI</h1>
 
+        {error && <div className="auth-error-alert">{error}</div>}
+
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label htmlFor="username">Username</label>
@@ -45,7 +74,9 @@ const Register = () => {
               name="username"
               placeholder="Enter username"
               autoComplete="username"
-              onChange={(e) => { setUsername(e.target.value) }}
+              value={username}
+              onChange={(e) => { setUsername(e.target.value); setError(""); }}
+              disabled={isSubmitting}
             />
           </div>
           <div className="input-group">
@@ -56,7 +87,9 @@ const Register = () => {
               name="email"
               placeholder="Enter email address"
               autoComplete="email"
-              onChange={(e) => { setEmail(e.target.value) }}
+              value={email}
+              onChange={(e) => { setEmail(e.target.value); setError(""); }}
+              disabled={isSubmitting}
             />
           </div>
 
@@ -68,11 +101,15 @@ const Register = () => {
               name="password"
               placeholder="Enter Password"
               autoComplete="new-password"
-              onChange={(e) => { setPassword(e.target.value) }}
+              value={password}
+              onChange={(e) => { setPassword(e.target.value); setError(""); }}
+              disabled={isSubmitting}
             />
           </div>
 
-          <button className="button primary-button">Sign Up</button>
+          <button className="button primary-button" disabled={isSubmitting}>
+            {isSubmitting ? "Creating account..." : "Sign Up"}
+          </button>
         </form>
 
         <p>Already have an account? <Link to="/login">Login</Link></p>
@@ -81,4 +118,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Register
